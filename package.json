@@ -23,6 +23,10 @@
     "@material-ui/core": "^3.7.0",
     "@material-ui/icons": "^3.0.1",
     "graphql": "^14.0.2",
+<<<<<<< HEAD
+=======
+    "prop-types": "^15.6.2",
+>>>>>>> 6e1934acb8f00a95ed8f700102da0482b9257fb7
     "react": "^16.6.3",
     "react-clipboard.js": "^2.0.2",
     "react-dom": "^16.6.3",
