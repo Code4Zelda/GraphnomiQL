@@ -4,7 +4,11 @@ import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
-
+import TextField from '@material-ui/core/TextField';
+import classNames from 'classnames';
+import Clipboard from 'react-clipboard.js';
+// import TextBox from './TextField.js';
+import { introspectionQuery } from 'graphQL'
 
 function rand() {
     return Math.round(Math.random() * 20) - 10;
@@ -28,6 +32,10 @@ const styles = theme => ({
         backgroundColor: theme.palette.background.paper,
         boxShadow: theme.shadows[5],
         padding: theme.spacing.unit * 4,
+    },
+    textField: {
+        marginLeft: theme.spacing.unit,
+        marginRight: theme.spacing.unit,
     },
 });
 
@@ -71,7 +79,20 @@ class SimpleModal extends React.Component {
                             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
               </Typography>
                         {/* <SimpleModalWrapped /> */}
+                        <Clipboard data-clipboard-text="I'll be copied">
+                            copy to clipboard
+      </Clipboard>
+                        <TextField
+                            required
+                            id="outlined-required"
+                            label="Required"
+                            defaultValue="Paste Code"
+                            className={classes.textField}
+                            margin="normal"
+                            variant="outlined"
+                        />
                     </div>
+
                 </Modal>
             </div>
         );

@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import SimpleModal from './SimpleModal.js'
 import '../styles/App.css';
 import Wrapper from '../containers/graphContainer.jsx'
+import Panel from './Panel.js'
 
 
 
